@@ -3,29 +3,49 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Learn about me and preview my work!">
     <title>Madi's Web Development Portfolio</title>
-    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Gotu|Montserrat&display=swap" rel="stylesheet"/>
+    <link href="main.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <header class="tagline">
-      <button>Menu</button>
-      <h1>Student. Artist. Teammate. Developer.</h1>
-      <div class="contact">Phone</div><div class="contact">Email</div><div class="contact">GitHub</div><div class="contact">Instagram</div>
+    <nav class="dropdown">
+      <p class="hamburger">&#9776;</p>
+		  <section class="menu">
+        <div class="menuitems">
+			  <a href="/index.html">Home</a>
+			  <a href="/about.html">About Me</a>
+			  <a href="/work.html">My Work</a>
+			  <a href="/contact.html">Contact</a>
+        </div>
+		  </section>
+    </nav>
+    <header>
+      <img class="profilepic" src="images/madi.png" alt="Madeline Guman's face">
+      <img class="graphic" src="images/bubbles.png" alt="pink, purple, and blue circles">
     </header>
-    <section class="aboutme">
-      <h2>This is my bio</h2>
-      <p>I am a student currently participating in the Bloc Frontend Web Development Bootcamp. I became interested in coding when sudoku ceased to quench my thirst for interesting puzzles. I love the challenge that comes with each new problem and the satisfaction of solving it, though my true passion is the process of learning and developing my skill set. In addition to frontend development, I am an artist-of-all-trades -- I partake in traditional arts such as watercolor and acrylic painting as well as digital illustration, cooking, writing, poetry, and many different disciplines of dance.</p>
-    </section>
-    <div class="mywork">
-      <h2>This is my work</h2>
-      <p>Get to know my style and abilities!</p>
-
-      <h3>Example</h3>
-      <div class="imagecontainer">
-        <p>this will be an image</p>
-      </div>
-      <p>This is an example of my work.</p>
-    </div>
+    <main>
+      <section class="bio">
+        <h1>Student. Artist. Teammate. Developer.</h1>
+        <p>I am a student currently participating in the Bloc Frontend Web Development Bootcamp. I became interested in coding when sudoku ceased to quench my thirst for interesting puzzles. I love the challenge that comes with each new problem and the satisfaction of solving it, though my true passion is the process of learning and developing my skill set. In addition to frontend development, I am an artist-of-all-trades -- I partake in traditional arts such as watercolor and acrylic painting as well as digital illustration, cooking, writing, poetry, and many different disciplines of dance.</p>
+      </section>
+      <section class="work">
+        <h2>My Work</h2>
+        <a href="???" class="example">
+          <h3>Web</h3>
+          <img class="exampleimage" src="images/quizapp.png" alt="Finn and Jake fist bumping">
+        </a>
+        <a href="???" class="example">
+          <h3>Illustration and Photoshop</h3>
+          <img class="exampleimage" src="images/toucan.jpg" alt="geometric toucan">
+        </a>
+      </section>
+    </main>
+    <footer>
+      <img src="icons/email.png" alt="email icon">
+      <img src="icons/github.png" alt="git hub icon">
+      <img src="icons/instagram.png" alt="instagram icon">
+      <img src="icons/linkedin.png" alt="linked in icon">
+      <img src="icons/phone.png" alt="phone icon">
+    </footer>
   </body>
 </html>
