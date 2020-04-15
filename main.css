@@ -103,6 +103,10 @@ a {
   width: 80%;
 }
 
+.web a {
+  color: rgb(212, 0, 177);
+}
+
 form {
   padding: 10px;
 }
