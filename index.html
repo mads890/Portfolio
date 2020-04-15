@@ -8,16 +8,14 @@
     <link href="main.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <nav class="dropdown">
-      <p class="hamburger">&#9776;</p>
-		  <section class="menu">
-        <div class="menuitems">
-			  <a href="/index.html">Home</a>
-			  <a href="/about.html">About Me</a>
-			  <a href="/work.html">My Work</a>
-			  <a href="/contact.html">Contact</a>
-        </div>
-		  </section>
+    <nav class="navbar">
+      <span class="hamburger" id="js-navbar-toggle">&#9776;</span>
+        <ul class="menu" id="js-menu">
+			  <li class="nav-link"><a href="index.html">Home</a></li>
+			  <li class="nav-link"><a href="about.html">About Me</a></liclass="nav-link">
+			  <li class="nav-link"><a href="work.html">My Work</a></li>
+			  <li class="nav-link"><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
     <header>
       <img class="profilepic" src="profilepic.png" alt="Madeline Guman's face">
@@ -41,11 +39,12 @@
       </section>
     </main>
     <footer>
-      <img src="emailicon.png" alt="email icon">
-        <img src="githubicon.png" alt="git hub icon">
-        <img src="instagramicon.png" alt="instagram icon">
-        <img src="linkedinicon.png" alt="linked in icon">
-        <img src="phoneicon.png" alt="phone icon">
+      <img src="emailicon.png" alt="email icon" onclick="href='mailto:mads890@yahoo.com'">
+      <img src="githubicon.png" alt="git hub icon" onclick="location.href='https\://github.com/mads890'">
+      <img src="instagramicon.png" alt="instagram icon" onclick="location.href='https\://www.instagram.com/shortheighttribe/'">
+      <img src="linkedinicon.png" alt="linked in icon" onclick="location.href='https\://www.linkedin.com/in/madeline-guman-5b5205157/'">
+      <img src="phoneicon.png" alt="phone icon">
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
