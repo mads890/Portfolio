@@ -9,15 +9,23 @@
   </head>
   <body>
     <nav class="navbar">
-      <span class="hamburger" id="js-navbar-toggle">&#9776;</span>
-        <ul class="menu" id="js-menu">
-			  <li class="nav-link"><a href="index.html">Home</a></li>
-			  <li class="nav-link"><a href="about.html">About Me</a></liclass="nav-link">
-			  <li class="nav-link"><a href="work.html">My Work</a></li>
-			  <li class="nav-link"><a href="contact.html">Contact</a></li>
+      <span class="navbar-toggle" id="js-navbar-toggle">&#9776;</span>
+        <ul class="nav-list" id="js-menu">
+			    <li>
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+			    <li>
+            <a href="about.html" class="nav-link">About Me</a>
+          </li>
+          <li>
+            <a href="work.html" class="nav-link">My Work</a>
+          </li>
+			    <li>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
         </ul>
     </nav>
-    <header>
+    <header class="index-header">
       <img class="profilepic" src="profilepic.png" alt="Madeline Guman's face">
       <img class="graphic" src="bubbles.jpeg" alt="pink, purple, and blue circles">
     </header>
@@ -28,23 +36,24 @@
       </section>
       <section class="work">
         <h2>My Work</h2>
-        <a href="/portfolio/work.html" class="example">
+        <a href="work.html" class="example">
           <h3>Web</h3>
           <img class="exampleimage" src="fistBump.png" alt="Finn and Jake fist bumping">
         </a>
-        <a href="/portfolio/work.html" class="example">
+        <a href="work.html" class="example">
           <h3>Illustration and Photoshop</h3>
           <img class="exampleimage" src="toucan.jpeg" alt="geometric toucan">
         </a>
       </section>
     </main>
     <footer>
-      <img src="emailicon.png" alt="email icon" onclick="href='mailto:mads890@yahoo.com'">
+      <a href="mailto:mads890@yahoo.com" class="iconlink"><img src="emailicon.png" alt="email icon"></a>
       <img src="githubicon.png" alt="git hub icon" onclick="location.href='https\://github.com/mads890'">
       <img src="instagramicon.png" alt="instagram icon" onclick="location.href='https\://www.instagram.com/shortheighttribe/'">
       <img src="linkedinicon.png" alt="linked in icon" onclick="location.href='https\://www.linkedin.com/in/madeline-guman-5b5205157/'">
-      <img src="phoneicon.png" alt="phone icon">
+      <a href="tel:+12035229013" class="iconlink"><img src="phoneicon.png" alt="phone icon"></a>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </body>
 </html>

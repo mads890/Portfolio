@@ -3,9 +3,9 @@
 }
 
 body {
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+  margin: 0;
+  width: 100%;
 }
 
 h1, h2, h3 {
@@ -18,43 +18,14 @@ p {
 }
 
 .navbar{
-  text-align: left;
-  position: relative;
-  display: inline;
-  height: 60px;
-  width: 100%;
+  font-size: 18px;
+  font-family: montserrat;
+  padding-bottom: 15px;
 }
 
-.active {
-  display: block;
-}
-
-.hamburger {
-  color: #230fa3;
-  padding-left: 5px;
-}
-
-.hamburger:hover {
-  cursor: pointer;
-}
-
-.menu {
+.nav-list {
   list-style-type: none;
   display: none;
-}
-
-.menu a {
-  text-decoration: none;
-  font-family: montserrat;
-  padding: 5px;
-  padding-bottom: 10px;
-  display: block;
-  color: #230fa3;
-}
-
-.menu li {
-  text-align: center;
-  margin: 15px auto;
 }
 
 .nav-link {
@@ -62,10 +33,33 @@ p {
   color: #230fa3;
 }
 
+.nav-list li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #230fa3;
+}
+
+.active {
+  display: block;
+}
+
 header {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 15px;
+}
+
+main {
+  padding: 15px;
 }
 
 .profilepic {
@@ -93,13 +87,13 @@ a {
 }
 
 .exampleimage {
-  width: 80vw;
+  width: 80%;
   border: 2px solid #53b2f9;
   border-radius: 100%;
   margin-bottom: 50px;
 }
 
-.example-image {
+.example-image, .about-image {
   width: 80%;
 }
 
@@ -134,6 +128,10 @@ footer {
 
 @media screen and (min-width: 520px) {
 
+  header, main {
+    padding: 50px;
+  }
+  
   .example {
     display: inline-block;
     width: 40vw;
@@ -160,7 +158,7 @@ footer {
 
 @media screen and (min-width: 1280px) {
 
-  .hamburger {
+  .navbar-toggle {
     display: none;
   }
 
@@ -174,34 +172,32 @@ footer {
     background-color: #fce1f586;
   }
 
-  .menu {
+  .nav-list {
     display: flex;
     margin-right: 30px;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.menu li {
+.nav-list li {
     margin: 0;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .graphic {
     display: inline;
     height: 25vw;
   }
-
-.leftimage {
-  float: left;
-}
-
-.rightimage {
-  float: right;
-}
   
   .profilepic {
     width: 25vw;
     height: 25vw;
+  }
+
+  .index-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   main {
@@ -226,6 +222,10 @@ footer {
     margin-right: auto;
   }
 
+  .art, .dance {
+    width: 40vw;
+  }
+
   .art p, .dance p {
     width: 60%;
   }
@@ -244,8 +244,13 @@ footer {
     width: 75%;
   }
 
+  .about-image {
+    width: 20vw;
+  }
+
   .web, .graphics {
     padding: 25px;
+    width: 40vw;
   }
 
   footer {

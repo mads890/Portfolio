@@ -9,25 +9,33 @@
   </head>
   <body>
     <nav class="navbar">
-      <span class="hamburger" id="js-navbar-toggle">&#9776;</span>
-        <ul class="menu" id="js-menu">
-			  <li><a class="nav-link" href="index.html">Home</a></li>
-			  <li><a href="about.html" class="nav-link">About Me</a></liclass="nav-link">
-			  <li><a href="work.html" class="nav-link">My Work</a></li>
-			  <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <span class="navbar-toggle" id="js-navbar-toggle">&#9776;</span>
+        <ul class="nav-list" id="js-menu">
+			    <li>
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+			    <li>
+            <a href="about.html" class="nav-link">About Me</a>
+          </li>
+          <li>
+            <a href="work.html" class="nav-link">My Work</a>
+          </li>
+			    <li>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
         </ul>
     </nav>
     <header>
-      <img class="profilepic about-pro-pic" src="profilepic.png" alt="Madeline Guman's face">
+      <img class="profilepic" src="profilepic.png" alt="Madeline Guman's face">
       <h1><span class="aboutheader">All About Me!</span></h1>
     </header>
-    <main>
+    <main class="aboutmain">
       <section class="art">
-        <img class="leftimage" src="artpic.jpeg" alt="Madi wearing a red, white, and blue shirt holding a paintbrush to a piece of paper">
+        <img class="about-image" src="artpic.jpeg" alt="Madi wearing a red, white, and blue shirt holding a paintbrush to a piece of paper">
         <p>Art has been a part of my life since the very beginning. Art is therapeutic. It is interactive. It is stimulating. It takes practice and discipline. Art helps me see the world differently.</p>
       </section>
       <section class="dance">
-        <img class="rightimage" src="dancepic.jpeg" alt="Madi hanging upside down from blue silks">
+        <img class="about-image" src="dancepic.jpeg" alt="Madi hanging upside down from blue silks">
         <p>Physical fitness is important to me! Keeping a healthy body allows for a healthy mind. Dance--another form of art in my opinion--is a form of self-expression like no other. Dance helps me relieve stress and literally keeps me on my toes so that I am at my best every day.</p>
       </section>
     </main>
@@ -38,5 +46,7 @@
       <img src="linkedinicon.png" alt="linked in icon" onclick="location.href='https\://www.linkedin.com/in/madeline-guman-5b5205157/'">
       <img src="phoneicon.png" alt="phone icon">
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
