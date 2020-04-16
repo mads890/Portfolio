@@ -142,7 +142,7 @@ footer {
     height: 35vw;
   }
 
-  .art p, .dance p {
+  .art p, .dance p, .desc {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -228,6 +228,10 @@ footer {
 
   .art p, .dance p {
     width: 60%;
+  }
+
+  .desc {
+    width: 30%;
   }
 
   .example {
