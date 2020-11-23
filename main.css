@@ -97,6 +97,10 @@ a {
   width: 80%;
 }
 
+.sub-title {
+  margin-top: 25px; 
+}
+
 .web a {
   color: rgb(212, 0, 177);
 }
